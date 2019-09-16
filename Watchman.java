@@ -1,4 +1,8 @@
-
+/**
+ * Watchman.java - Implements Subject.java
+ * 
+ * @author Larry Gunter
+ */
 import java.util.ArrayList;
 public class Watchman implements Subject {
 
@@ -17,12 +21,20 @@ public class Watchman implements Subject {
 		observers.remove(observer);
 	}
 	
+	/**
+	 * Method to notify the observers
+	 */
 	public void notifyObservers()	{
 		for (Observer observer : observers) {
 			observer.update(warning);
 		}
 	}
 	
+	/**
+	 * Method to push warning to observers
+	 * 
+	 * @param warning
+	 */
 	public void issueWarning(int warning) {
 		if (warning == 1) {
 			System.out.println("WARNING:  1 trumpet was played!");
