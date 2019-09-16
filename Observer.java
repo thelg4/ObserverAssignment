@@ -1,9 +1,8 @@
 /**
  * Observer.java - Interface to be implemented
- * 
- * @author Larry Gunter
  *
+ * @author Larry Gunter
  */
 public interface Observer {
-	public void update(int warning);
+  public void update(int warning);
 }
